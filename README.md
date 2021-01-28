@@ -11,7 +11,7 @@ XAdESSigner signer = new XAdESSigner("keystore.jks", "password", "selfsigned");
 
 String signed = signer.sign(xml);
 
-boolean isValid = signer.validate(signed);
+X509Certificate cert = signer.validate(signed);
 ```
 
 **Output:**
