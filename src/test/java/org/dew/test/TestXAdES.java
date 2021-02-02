@@ -25,6 +25,15 @@ public class TestXAdES extends TestCase {
   }
   
   public void testApp() throws Exception {
+    
+    sign();
+    
+  }
+  
+  protected
+  void sign()
+    throws Exception
+  {
     String xml = "<document><id>1</id></document>";
     
     System.out.println(xml);
